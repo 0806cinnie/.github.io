@@ -4,32 +4,42 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- google fonts  -->
-   <link href='https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap' rel='stylesheet'>
+<!-- google fonts  -->
+<link href='https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap' rel='stylesheet'>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- link to local css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- jquery js -->
+<!-- link to local css -->
+   <link rel="stylesheet" href="style.css">
+  <!-- jquery js -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <!-- Popper.js -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-8jKkM5SjcZV7lwKw8GJtRlYYtJhPoDnKcgQ8WLdHq3Z3n3oOJ39WZY8iFnhqZWWg" crossorigin="anonymous"></script>
 <!-- bootstrap js -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <title>THE HAUKAI RESTAURANT</title>
+    <style>
+    .contact-image{
+    background-image: url(./images/pancake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    opacity: .9;
+}
+
+    </style>
   </head>
-  <body>
-    <!-- header section  -->
+  <body class="contact-image">
+    <!-- header section -->
     <header>
-      <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-azure">
-      <a class="navbar-brand" href="index.html" style="color: purple; font-weight: 700;">THE HAUKAI Resturant</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- create nav bar  -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-azure">
+            <a class="navbar-brand"  href="index.html" style="color: purple; font-weight: 700;">THE HAUKAI Resturant</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
@@ -38,11 +48,11 @@
           <li class="nav-item">
             <a class="nav-link" href="Hour.html">Hour</a>
           </li>
+          <!-- create drop down list for menu -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="Menu.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Menu
             </a>
-            <!-- create a drop down list for menu -->
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="Menu.html">APPETIZERS</a>
                 <a class="dropdown-item" href="Main.html">MAIN</a>
@@ -58,33 +68,36 @@
     </nav>
   </header>
   <!-- main section -->
-  <main>
+<main>
     <section id="home" class="container mt-5">
-      <!-- created by boostrap divided by two parts  -->
-        <h1 class="text-center">Welcome to THE THE HAUKAI Resturant</h1>
-        <p class="text-center"><em>We are specialises in Māori kai and is based in the Bay of Islands.</em></p>
-        <div class="row">
-          <div class="col-md-12">
-            <img src="./images/312472.jpg" class="img-fluid" alt="view image">
-          </div>
+        <h1 class="text-center">Welcome to H Resturant</h1>
+        <p class="text-center">We'd love to hear from you. Please send us a message, we'll contact you as soon as possible.</p>
+        <!-- create form by bootstrap which contains core information-->
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="please enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="please enter your email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="please leave your message" style="resize: none;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Send</button>
+            <!-- add google map by iFrame  -->
+            <div align="center" style="margin-top: 20px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50511.124977527805!2d176.09337983124996!3d-37.69748339999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6ddbb63df5c0b7%3A0x6a8c5eac79a065a2!2sBroomtree%20Cafe%26Kitchen!5e0!3m2!1szh-CN!2snz!4v1673315273851!5m2!1szh-CN!2snz" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </form>
         </div>
-      </section>
-      <section id="intro" class="container">
-       
-        <div class="row mt-1 pt-1">
-          <div class="col-md-4 "> 
-            <h2 class="introText" style="font-size: 25px;">Introduction</h2>
-            <p class="introText">  The HAUKAI restaurant is located on a beautiful island with beautiful scenery, and we are also committed to traditional food culture, and the restaurant dishes have elements of Maori culture. Let you experience the real New Zealand local food culture from taste, sight and smell. <br>  We accept appointments, come with us on a food tour!</p>
-         
-          </div>
-          <div class="col-md-8"> 
-            <img src="./images/pexels-tanya-gorelova-3933207.jpg" class="img-fluid" alt="food image">
-          </div>
-        </div>
-      </section>
-  </main>
-  <!-- footer section -->
-  <footer>
+      </div>
+    </div>
+</main>
+<!-- footer section -->
+<footer>
     <div class="container">
         <div class="row mt-1 pt-1">
             <div class="col-md-3">
@@ -108,4 +121,11 @@
 </body>
 </html>
 
-  
+
+
+
+
+
+
+
+   

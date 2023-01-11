@@ -1,45 +1,56 @@
-/* Universal box sizing */
-* {
-    box-sizing: border-box;
+body{
+    
+    /* background: linear-gradient(to right, #80ebe7, #2790f3); */
+    background-image: url(./images/night.jpg);
+    font-family: 'Indie Flower', cursive;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
-/* Set the size of the body */
-body {
-  width: 600px;
+ul li{
+    list-style-type: none;
 }
-/* Style the header */
-.header {
-    background-color:green;
-    text-align: center;
-    padding: 20px;
+nav{
+   
+    color: darkgray;
 }
-/* Style the top navigation bar */
-.topnav {
-    overflow: hidden;
-    background-color: black;
+.navbar-nav .nav-item .nav-link{
+    color: rgb(240, 11, 209);
 }
-/* Style the topnav links */
-.topnav a {
-    float: left;
-    display: block;
+.navbar-nav .nav-item .nav-link:hover{
+    color: white;
+}
+footer{
+    background-color: rgba(207, 201, 201, 0.668);
+    color: white;
+    text-shadow: 2px 2px 2px #000;
+}
+.text-center{
+    color: rgb(172, 49, 225);
+    text-shadow: 1px 1px 1px #000;
+}
+.introText{
+    font-size: 20px;
+    color: white;
+}
+footer{
+    line-height: 100%;
+}
+
+.star{
+    color: rgb(190, 14, 14);
+}
+.calenText{
     color: white;
     text-align: center;
-    padding: 14px 16px;
 }
-/* Create two equal columns that float next to each other */
-.column {
-    float: left;
-    width: 300px;
-    padding: 15px;
-    background-color: yellow;
+.calenText a{
+    color:rgb(15, 196, 60);
+    font-weight: 700;
 }
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.footer {
-    background-color: yellow;
-    text-align: center;
-    padding: 10px;
-}
+
+  
+  
+  
+  
+  
