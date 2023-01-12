@@ -1,0 +1,63 @@
+/* set for body style  */
+body{   
+    /* background: linear-gradient(to right, #80ebe7, #2790f3); */
+    background-image: url(./images/winebgc.png);
+    font-family: 'Indie Flower', cursive;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+/* set ul li style  */
+ul li{
+    list-style-type: none;
+}
+/* set nav color */
+nav{  
+    color: darkgray;
+}
+/* set navbar link color  */
+.navbar-nav .nav-item .nav-link{
+    color: rgb(232, 15, 232);
+}
+/* set navbar color when it is hover  */
+.navbar-nav .nav-item .nav-link:hover{
+    color: rgb(237, 157, 157);
+    font-weight: 700;
+}
+/* set footer syle  */
+footer{
+    background-color: rgba(207, 201, 201, 0.668);
+    color: white;
+    text-shadow: 2px 2px 2px #000;
+    line-height: 100%;
+}
+/* set text content style  */
+.text-center{
+    color: rgb(227, 190, 227);
+    text-shadow: 1px 1px 1px #000;
+}
+/* set class with .introText style  */
+.introText{
+    font-size: 20px;
+    color: white;
+}
+/* set recommend icon style  */
+.star{
+    color: rgb(190, 14, 14);
+}
+/* set calendar text style  */
+.calenText{
+    color: white;
+    text-align: center;
+}
+/* set 'reservation' link style in the hour.html */
+.calenText a{
+    color:rgb(15, 196, 60);
+    font-weight: 700;
+}
+
+  
+  
+  
+  
+  
