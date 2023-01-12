@@ -22,21 +22,22 @@
    <!-- Bootstrap Datepicker JS -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous"></script>
     <title>ABOUT US</title>
+    <style>
+      /* media query when screen <991.98px navbar color will change and iFrame,img width will be 100% */
+      @media (max-width: 991.98px) {
+      .navbar-toggler {
+          background-color: white;
+      }
+      iFrame{
+        width: 100%;
+      }
+      img{
+        width: 100%;
+      }
+  }
+    </style>
   </head>
-  <style>
-    /* media query when screen <991.98px navbar color will change and iFrame,img width will be 100% */
-    @media (max-width: 991.98px) {
-    .navbar-toggler {
-        background-color: white;
-    }
-    iFrame{
-      width: 100%;
-    }
-    img{
-      width: 100%;
-    }
-}
-  </style>
+ 
   <body>
     <!-- header section -->
     <header>
@@ -115,10 +116,10 @@
             <h3 class="text-center">The BEST of New Zealand's Rugged South|Gordon Ramsay: Uncharted</h3>
           </div>
             <div class="col-md-12 col-sm-6">
-            <p class="text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/s-IcmrVo0ZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+            <p class="iFrame text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/s-IcmrVo0ZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
             </div>
             <div class="col-md-12 col-sm-6">
-                <p class="text-center"><img src="./images/about/maorifood.png" alt="maori food culture" width="560px"></p>
+                <p class="text-center"><img src="./images/about/maorifood.png" alt="maori food culture" width="560"></p>
                 <p class="text-center">In traditional Māori culture, we have fish, chicken, and root vegetables as staple foods, usually baked in the ground, but now they are more abundant, adding a variety of vegetables and meat.</p>
             </div>
         </div>
